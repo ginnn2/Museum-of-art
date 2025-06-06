@@ -18,13 +18,19 @@ th, td {
 
 button {
   padding: 10px 20px;
-  border: none;
-  border-radius: 12pxM;
-  background: #DEB7AB;
-  color: white;
+  border: 2px solid #DEB7AB;
+  border-radius: 12px;
+  background-color: transparent;
+  background: white;
+  color: #DEB7AB;
   box-shadow: 5px 5px 10px #bebebe,
               -5px -5px 10px #ffffff;
   font-size: 14px;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #DEB7AB;          /* sfondo rosa */
+  color: white;                       /* testo bianco */
 }
