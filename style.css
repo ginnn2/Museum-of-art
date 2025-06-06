@@ -20,10 +20,10 @@ button {
   padding: 10px 20px;
   border: none;
   border-radius: 12pxM;
-  background: #D5896F;
+  background: #DEB7AB;
   color: white;
-  box-shadow: 5px 5px 10px #3a6fd9,
-              -5px -5px 10px #69a4ff;
+  box-shadow: 5px 5px 10px #bebebe,
+              -5px -5px 10px #ffffff;
   font-size: 14px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
