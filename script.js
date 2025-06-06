@@ -16,7 +16,7 @@ fetch("https://openaccess-api.clevelandart.org/api/artworks/?limit=10")
 
       const imageCell = document.createElement("td");
       const button = document.createElement("button");
-      button.textContent = "Mostra immagine";
+      button.textContent = "Show image";
       imageCell.appendChild(button);
       row.appendChild(imageCell);
 
@@ -39,7 +39,6 @@ fetch("https://openaccess-api.clevelandart.org/api/artworks/?limit=10")
         }
       });
 
-      imageCell.appendChild(button);
       row.appendChild(imageCell);
       
       tableBody.appendChild(row);
