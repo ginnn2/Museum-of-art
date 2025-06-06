@@ -25,12 +25,12 @@ fetch("https://openaccess-api.clevelandart.org/api/artworks/?limit=10")
         img.src = work.images?.web?.url || "";
         img.alt = "Opera d'arte";
         img.style.maxWidth = "200px";
-        imageChell.appendChild(document.createElement("br"));
-        imageChell.appendChild(img);
+        imageCell.appendChild(document.createElement("br"));
+        imageCell.appendChild(img);
         button.disabled = true;
       });
 
-      imageChell.appendChild(button);
+      imageCell.appendChild(button);
       row.appendChild(imageChell);
       
       tableBody.appendChild(row);
