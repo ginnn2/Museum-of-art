@@ -25,16 +25,16 @@ fetch("https://openaccess-api.clevelandart.org/api/artworks/?limit=10")
       button.addEventListener("click", () => {
         if (!imgVisible) {
           img = document.createElement("img");
-          img.src = imageUrl;
+          img.src = work.images?.web?.url || "";
           img.alt = "ARTWORKS";
           img.style.maxWidth = "200px";
           imageCell.appendChild(document.createElement("br"));
           imageCell.appendChild(img);
-          button.textContent = "Nascondi immagine";
+          button.textContent = "Hide image";
           imgVisible = true;
         } else {
           imageCell.removeChild(img);
-          button.textContent = "Mostra immagine";
+          button.textContent = "Show image";
           imgVisible = false;
         }
       });
