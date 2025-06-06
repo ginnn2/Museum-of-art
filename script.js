@@ -14,10 +14,10 @@ fetch("https://openaccess-api.clevelandart.org/api/artworks/?limit=10")
       authorCell.textContent = work.creators?.[0]?.description || "Sconosciuto";
       row.appendChild(authorCell);
 
-      const imageChell = document.createElement("td");
+      const imageCell = document.createElement("td");
       const button = document.createElement("button");
       button.textContent = "Mostra immagine";
-      imageChell.appendChild(button);
+      imageCell.appendChild(button);
       row.appendChild(imageChell);
 
       button.addEventListener("click", () => {
