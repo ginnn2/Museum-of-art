@@ -1,64 +1,72 @@
+/* General body styles: font and margin */
 body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
+  font-family: Arial, sans-serif;  /* Use Arial font for readability */
+  margin: 20px;                    /* Add space around the page */
 }
 
+/* Table styling */
 table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-  background-color: white;
+  width: 100%;                     /* Table takes full width of the container */
+  border-collapse: collapse;      /* Remove spacing between cells */
+  margin-top: 20px;               /* Space above the table */
+  background-color: white;        /* White background for the table body */
 }
 
+/* Table header background */
 th {
-  background-color: #f0f0f0;
+  background-color: #f0f0f0;      /* Light gray background for table headers */
 }
 
+/* Common styling for both header and cell elements */
 th, td {
-  border: 1px solid #ccc;
-  padding: 12px;
-  text-align: left;
+  border: 1px solid #ccc;         /* Light gray border for cells */
+  padding: 12px;                  /* Padding inside each cell */
+  text-align: left;               /* Align text to the left */
 }
 
+/* Button default styling */
 button {
-  padding: 10px 20px;
-  border: 2px solid #DEB7AB;
-  border-radius: 12px;
-  background-color: transparent;
-  background: transparent;
-  color: #DEB7AB;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
-  font-size: 14px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  padding: 10px 20px;                          /* Padding inside the button */
+  border: 2px solid #DEB7AB;                   /* Solid border with soft pink color */
+  border-radius: 12px;                         /* Rounded corners */
+  background-color: transparent;               /* Transparent background */
+  background: transparent;                     /* Redundant but safe for compatibility */
+  color: #DEB7AB;                              /* Button text in soft pink */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);/* Soft shadow for depth effect */
+  font-size: 14px;                             /* Standard font size */
+  cursor: pointer;                             /* Pointer cursor on hover */
+  transition: all 0.3s ease;                   /* Smooth transition on hover */
 }
 
+/* Button hover effect */
 button:hover {
-  background-color: #DEB7AB;        
-  color: white;                       
+  background-color: #DEB7AB;    /* Fill background with soft pink on hover */
+  color: white;                 /* Change text color to white on hover */
 }
 
+/* Container to make the table scrollable on small screens */
 .table-container {
-  overflow-x: auto;
-  width: 100%;
+  overflow-x: auto;   /* Enables horizontal scroll if table overflows */
+  width: 100%;        /* Container takes full width */
 }
 
+/* Responsive styles for small screens (max 600px width) */
 @media (max-width: 600px) {
   table {
-    font-size: 14px;
+    font-size: 14px;            /* Slightly smaller font for table */
   }
 
   th, td {
-    padding: 8px;
+    padding: 8px;               /* Reduce cell padding on mobile */
   }
 
   button {
-    padding: 8px 14px;
-    font-size: 12px;
+    padding: 8px 14px;          /* Smaller button size on mobile */
+    font-size: 12px;            /* Smaller text on buttons */
   }
 
   h1 {
-    font-size: 22px;
-    text-align: center;
+    font-size: 22px;            /* Smaller heading font */
+    text-align: center;         /* Center-align heading on small screens */
   }
 }

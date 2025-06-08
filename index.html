@@ -1,24 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!-- The document is in English -->
 <head>
-  <meta charset="UTF-8">
-  <title>Opere d'Arte</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8"> <!-- Sets character encoding for special characters -->
+  <title>Opere d'Arte</title> <!-- Title shown in the browser tab -->
+  <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
 </head>
+
 <body>
-  <h1>ARTWORKS</h1>
+  <h1>ARTWORKS</h1> <!-- Main heading of the page -->
+
+  <!-- Container that allows the table to scroll horizontally on mobile -->
   <div class="table-container">
-     <table id="art-table">
-    <thead>
-      <tr>
-        <th>Title</th>
-        <th>Author</th>
-        <th>Image</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
+    <table id="art-table"> <!-- Table that will be filled dynamically using JavaScript -->
+      <thead> <!-- Table header -->
+        <tr>
+          <th>Title</th>  <!-- Column for artwork title -->
+          <th>Author</th> <!-- Column for author name -->
+          <th>Image</th>  <!-- Column for the image button and image display -->
+        </tr>
+      </thead>
+      <tbody></tbody> <!-- Empty body; rows will be created dynamically via JS -->
+    </table>
   </div>
-  <script src="script.js"></script>
+
+  <script src="script.js"></script> <!-- Link to the JavaScript file -->
 </body>
 </html>
